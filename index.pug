@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JavaScript : Apparition au défilement
+    link(rel="stylesheet", href="assets/css/index.css")
+  body
+      -const titres=['Text1', 'Text2', 'Text3']
+
+      each titre in titres
+        #app
+            h1=titre
+            div
+              p
+                |Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veniam perferendis maxime.
+                br
+                |Minus quae amet officia, quam nisi enim veritatis. 
+                br
+              a(href="#").btn button
+
+              p|Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                |Itaque eius sapiente dolor repellendus quos mollitia vitae adipisci, rem excepturi. Accusamus odio delectus laborum 
+                |reprehenderit optio consectetur itaque pariatur, perspiciatis necessitatibus!
+
+      script(src="assets/js/index.js")
